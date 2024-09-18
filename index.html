@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        @font-face {
+            font-family: "Game Over Cre";
+            src: url(fonts/gameovercre1.ttf);
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Game Over Cre", sans-serif;
+            font-size: 40px;
+        }
+
+        body {
+            background: black;
+            color: white;
+        }
+
+        #image-box {
+            border: 4px solid white;
+            height: 500px;
+            width: 60%;
+            margin: 10px auto;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #opponent {
+            height: 400px;
+        }
+
+        #text-box {
+            border: 4px solid white;
+            height: 150px;
+            width: 60%;
+            margin: 10px auto;
+            padding: 20px;
+        }
+
+        #options {
+            display: flex;
+            width: 60%;
+            /* background: gray; */
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #option-1,
+        #option-2,
+        #option-3,
+        #option-4 {
+            height: 100px;
+            width: 49.5%;
+            border: 4px solid white;
+            margin-bottom: 10px;
+            font-size: 35px;
+            padding: 10px;
+        }
+
+        #option-1:hover,
+        #option-2:hover,
+        #option-3:hover,
+        #option-4:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+    <title>Visual novel test</title>
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<body>
+    <section class="main-hub">
+        <div id="image-box">
+            <img id="opponent" src="img/mimikyu.gif">
+        </div>
+        <div id="text-box">
+            <h1 id="action-text"></h1>
+        </div>
+        <div id="options">
+            <div id="option-1"></div>
+            <div id="option-2"></div>
+            <div id="option-3"></div>
+            <div id="option-4"></div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
